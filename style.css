@@ -1,0 +1,185 @@
+/* common */
+body {
+  margin: 0;
+  color: #333;
+}
+
+h1, h2 {
+  margin: 0;
+  font-size: 12px;
+}
+
+img {
+  vertical-align: bottom;
+}
+
+a {
+  color: inherit;
+}
+
+dl, dt, dd, p, li, ol {
+ margin: 0;
+ padding: 0;
+}
+
+.container {
+  width: 100%;
+  max-width: 1000px;
+  margin: 42px auto;
+}
+
+.wrapper {
+  width: calc(100% - 10%);
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+/* header */
+header {
+  padding: 16px 8px;
+}
+
+/* main */
+.mainvisual img {
+  object-fit: cover;
+  width: 100%;
+}
+
+.index, .detail {
+  background: #f5f5f5;
+  padding: 32px 0;
+  margin-top: 60px;
+}
+
+section h2 {
+  font-size: 18px;
+  text-align: center;
+}
+
+.index ol {
+  font-size: 14px;
+  margin: 36px auto;
+  padding: 0px 32px;
+  display: inline-block;
+}
+
+.line {
+  border: #333 1px solid;
+  width: calc(100% - 12%);
+  margin: 32px auto 0px;
+}
+
+.index li + li {
+  margin-top: 20px;
+}
+
+.photos {
+  margin-top: 60px;
+  text-align: center;
+}
+
+.photo {
+  margin-top: 14px;
+}
+
+.photo img {
+  object-fit: cover;
+  width: 100%;
+  max-width: 600px;
+}
+
+.detail {
+  margin-top: 60px;
+}
+
+.detail dl {
+  font-size: 14px;
+  border-bottom: #333 1px solid;
+  margin-top: 32px;
+}
+
+.detail dt {
+  margin-top: 8px;
+  font-weight: bold;
+}
+
+.detail dd:nth-of-type(3) {
+  margin-bottom: 48px;
+}
+
+.detail p {
+  margin-top: 20px;
+  font-size: 14px;
+}
+
+.text {
+  margin-top: 32px;
+}
+
+.box {
+  width: 90%;
+  margin: 0 auto;
+}
+
+/* footer */
+footer {
+  font-size: 8px;
+  text-align: center;
+  margin-top: 60px;
+  padding: 12px;
+}
+
+/* large screen */
+@media(min-width:1024px) {
+  .photos {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 0px 16px;
+  }
+
+  .flexcontainer {
+    display: flex;
+    align-items: flex-end; 
+    margin-top: 32px;
+  }
+  
+  .flex1 {
+    width: 50%;
+    border-right: #333 1px solid;
+  }
+
+  .text {
+    width: 80%;
+    margin: 0 auto;
+  }
+
+  dl {
+    width: 60%;
+    margin: 0 auto;
+  } 
+
+  .detail dd:nth-of-type(3) {
+    margin-bottom: inherit;
+  }
+
+  .detail dl {
+    border-bottom: none;
+    margin-top: 0;
+  }
+
+  .detail p:first-of-type {
+    margin: 0;
+  }
+
+  .detail {
+    padding: 60px 0px;
+  }
+
+  .detail h2 {
+    margin-top: 0;
+  }
+
+
+
+
+}
